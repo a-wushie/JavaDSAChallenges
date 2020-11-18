@@ -1,2 +1,2 @@
 # JavaDSAChallenges
-Practice problems for Java DSA questions
+Practice problems for Java Data Structure and Algorithm problems
