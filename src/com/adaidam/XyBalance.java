@@ -13,11 +13,14 @@ package com.adaidam;
 public class XyBalance {
 
     public static boolean xyBalance(String str) {
-
-        if(str.lastIndexOf("y")<str.lastIndexOf("x")){
-            return false;
+        if(str.contains("x") && str.contains("y")){
+            if(str.lastIndexOf("y")>str.lastIndexOf("x")){
+                return true;
+            }
+        } else if (!str.contains("x")){
+            return true;
         }
-        return true;
+        return false;
     }
 
     public static void main(String[] args) {

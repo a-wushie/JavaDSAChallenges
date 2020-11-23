@@ -17,8 +17,12 @@ import java.util.Map;
 public class MapAB {
     public static Map<String, String> mapAB(Map<String, String> map){
 
+        //if statement for checking a and b keys are present
         if (map.containsKey("a") && map.containsKey("b")){
-            if(map.get("a") == map.get("b")){
+
+            //if statement for checking the values of a and b are the same
+            if(map.get("a").equals(map.get("b"))){
+                //remove the key (and by default the value
                 map.remove("a");
                 map.remove("b");
             }
