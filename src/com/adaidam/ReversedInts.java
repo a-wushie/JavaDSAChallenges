@@ -1,5 +1,12 @@
 package com.adaidam;
 
+import java.util.Arrays;
+
+/**
+ *Given an array of ints length 3, return a new array with the elements in reverse order,
+ * so {1, 2, 3} becomes {3, 2, 1}.
+ */
+
 public class ReversedInts {
 
     public static int[] reverse3(int[] nums) {
@@ -11,14 +18,12 @@ public class ReversedInts {
 //            n++;
 //        }
         //initialize an int array to hold reversed array.
-        int[] reversed = {nums[2],nums[1],nums[0]};
-
         //return the new array
-        return reversed;
+        return new int[] {nums[2],nums[1],nums[0]};
     }
 
     public static void main(String[] args) {
         int[] nums = {1,3,6};
-        System.out.println(reverse3(nums));
+        System.out.println(Arrays.toString(reverse3(nums)));
     }
 }

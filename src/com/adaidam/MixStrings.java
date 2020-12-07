@@ -14,13 +14,13 @@ public class MixStrings {
     public static String mixStrings(String a, String b) {
         //create empty string to hold combined strings
         String temp = "";
-        //determine with is the shorter string
+        //determine which is the shorter string
         int min = Math.min(a.length(), b.length());
 
         for (int i = 0; i < min; i++) {
             temp = temp + a.charAt(i) + b.charAt(i);
         }
-        //idk what tis is doing?
+        //collecting all the remaining letters in whichever is the shorter string
         return temp + a.substring(min) + b.substring(min);
     }
 
